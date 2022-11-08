@@ -1,3 +1,10 @@
-document.querySelector('html').onclick = function() {
-    alert('别戳我，我怕疼。');
+let myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    let mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/firefox.jpg') {
+      myImage.setAttribute('src', 'images/firefox2.png');
+    } else {
+      myImage.setAttribute('src', 'images/firefox.jpg');
+    }
 }
