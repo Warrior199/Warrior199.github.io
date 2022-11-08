@@ -1,3 +1,3 @@
-let myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world1111!';
-alert('h1 changed');
+document.querySelector('html').onclick = function() {
+    alert('别戳我，我怕疼。');
+}
