@@ -1,12 +1,11 @@
-let myImage = document.querySelector('img');
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-myImage.onclick = function() {
-    let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/firefox.jpg') {
-      myImage.setAttribute('src', 'images/firefox2.png');
-      //alert('换了换了');
-    } else {
-      myImage.setAttribute('src', 'images/firefox.jpg');
-      //alert('又换了又换了');
-    }
-}
+const guesses = document.querySelector('.guesses');
+const lastResult = document.querySelector('.lastResult');
+const lowOrHi = document.querySelector('.lowOrHi');
+
+const guessSubmit = document.querySelector('.guessSubmit');
+const guessField = document.querySelector('.guessField');
+
+let guessCount = 1;
+let resetButton;
