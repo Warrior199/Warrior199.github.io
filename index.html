@@ -7,19 +7,27 @@
     <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <title>My test page</title>
   </head>
-  <body>
-    <h1>Hello Mozilla</h1>
-    <img src="images/firefox.jpg" alt="Mytestimage">
-    <p>At Mozilla, we're a global community of technologists, thinkers, and builders working together… </p>
-    <p>At Mozilla, we're a global community of</p>
+   <body>
+    <h1>Number guessing game</h1>
 
-<ul>
-  <li>technologists</li>
-  <li>thinkers</li>
-  <li>builders</li>
-</ul>
+    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
 
-<p>working together… </p>
-  <script src="scripts/main.js" defer></script>
+    <div class="form">
+      <label for="guessField">Enter a guess: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+
+      // Your JavaScript goes here
+
+    </script>
   </body>
 </html>
